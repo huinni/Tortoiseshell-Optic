@@ -1,0 +1,240 @@
+body  {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+.container  {
+  max-width: 960px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+header  {
+  background-image: url("./images/glasses-bg.png");
+  height: 30rem;
+  width: 100%;
+  padding-top: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu   {
+  display: inline-block;
+}
+
+nav   {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+}
+.mobile-menu    {
+  display: none;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav ul  {
+  margin-right: 1rem;
+}
+
+nav li  {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+header .flex  {
+  justify-content: flex-end;
+}
+
+.mainbanner   {
+  width: auto;
+}
+.main-banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  margin-right: -2rem;
+  margin-top: 10rem;
+}
+@media only screen and (max-width:700px) {
+  .menu   {
+    display: none;
+  }
+  .mobile-menu  {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px)  {
+  .main-banner h1   {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+  nav .container  {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav span  {
+    display: none;
+  }
+
+  .menu   {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  nav .logo   {
+    width: 100%;
+  }
+
+  header  {
+    background-position: 20%;
+    height: 17rem;
+    padding-top: 0;
+  }
+
+.main-banner h1 {
+  width: 100%;
+  margin-top: 9rem;
+}
+}
+
+/* -- supporting --*/
+
+.support  {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.service  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  padding-right: 6rem;
+  text-align: center;
+}
+
+.service img  {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.service img .paper {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .support {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3.77rem;
+  }
+  .service    {
+    height: auto;
+    font-size: .77rem;
+    padding: 0.77rem;
+  }
+}
+
+/* info */
+
+.title  {
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+  background-color: cadetblue;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 5rem;
+}
+
+.info   {
+  width: 35%;
+  padding-right: 5%;
+}
+
+.supporting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width:560px)  {
+  .supporting {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p   {
+    font-size: 0.77rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+  .info {
+    width: 100%;
+
+  }
+  .title  {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+    /*footer*/
+
+footer  {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+footer img  {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+
+@media only screen and (max-width:560px)  {
+
+  footer div  {
+    display: none;
+  }
+
+  footer{
+    justify-content: center;
+
+  }
+}
